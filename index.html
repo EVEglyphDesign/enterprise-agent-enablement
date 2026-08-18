@@ -4,20 +4,20 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>The proof of concept worked. Let's help your people use it. — a note from Jeff Eden</title>
-<meta name="description" content="A short note from Jeff Eden. The Enterprise Data Mesh proof of concept exceeded expectations. The historical reporting is there. Teams delivery works. What's needed now isn't more capability — it's adoption." />
+<meta name="description" content="A short note from Jeff Eden on the Adoption Fitness Check — four dimensions (awareness, confidence, fit, habit) that turn a delivered platform into a used one. The mesh is built; the last mile is adoption." />
 <link rel="canonical" href="https://eveglyphdesign.github.io/enterprise-agent-enablement/" />
 <meta name="theme-color" content="#fdfaf4" />
 <meta property="og:title" content="The proof of concept worked. Let's help your people use it. — a note from Jeff Eden" />
-<meta property="og:description" content="The mesh is delivered. The reporting is there. Teams works. What's next is adoption." />
+<meta property="og:description" content="An Adoption Fitness Check across four dimensions: awareness, confidence, fit, habit. The mesh is delivered. The last mile is adoption." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://eveglyphdesign.github.io/enterprise-agent-enablement/" />
 <meta property="og:image" content="https://eveglyphdesign.github.io/enterprise-agent-enablement/assets/og.png" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
-<meta property="og:image:alt" content="A short note from Jeff Eden — Point it. Scale it. Package it." />
+<meta property="og:image:alt" content="A short note from Jeff Eden — the proof of concept worked; let's help your people use it." />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="The proof of concept worked. Let's help your people use it. — a note from Jeff Eden" />
-<meta name="twitter:description" content="The mesh is delivered. The reporting is there. Teams works. What's next is adoption." />
+<meta name="twitter:description" content="An Adoption Fitness Check across four dimensions: awareness, confidence, fit, habit. The mesh is delivered. The last mile is adoption." />
 <meta name="twitter:image" content="https://eveglyphdesign.github.io/enterprise-agent-enablement/assets/og.png" />
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%23fdfaf4' stroke='%23e87722' stroke-width='6'/%3E%3Ctext x='50' y='68' text-anchor='middle' font-family='Georgia,serif' font-size='58' font-weight='600' fill='%231a1a1a'%3EE%3C/text%3E%3C/svg%3E" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -56,6 +56,11 @@ footer{max-width:var(--content);margin:0 auto;padding:0 1.5rem 3rem;text-align:c
 footer .close{font-family:var(--font-display);font-style:italic;color:var(--accent);margin-top:.5rem}
 footer .canonical{margin-top:1.25rem;padding-top:1.25rem;border-top:1px solid var(--line);font-size:.8rem}
 footer .canonical .url{font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;color:var(--ink);word-break:break-all}
+ol.dimensions{list-style:none;counter-reset:dim;margin:1rem 0 1.75rem;padding:0}
+ol.dimensions li{counter-increment:dim;position:relative;padding:1rem 0 1rem 3.25rem;border-top:1px solid var(--line);color:var(--ink)}
+ol.dimensions li:last-child{border-bottom:1px solid var(--line)}
+ol.dimensions li::before{content:counter(dim,decimal-leading-zero);position:absolute;left:0;top:1.05rem;font-family:var(--font-display);font-weight:600;font-size:1.1rem;color:var(--accent);letter-spacing:.02em}
+ol.dimensions li strong{font-family:var(--font-display);font-weight:600;font-size:1.15rem;color:var(--ink);display:block;margin-bottom:.35rem;letter-spacing:-0.005em}
 </style>
 </head>
 <body>
@@ -83,17 +88,42 @@ footer .canonical .url{font-family:'SFMono-Regular',Consolas,'Liberation Mono',M
   <h2>The problem we haven't solved yet</h2>
 
   <p>
-    The gap isn't capability. The gap is that the people this platform was built for haven't had a real chance to use it yet. A working PoC is not the same thing as a tool your team reaches for on a Tuesday.
+    The gap isn't capability. The gap is that the people this platform was built for haven't had a real chance to use it yet. A working proof of concept is not the same thing as a tool your team reaches for on a Tuesday.
   </p>
 
   <p>
-    That last step is not another architecture question. It's a services question — who onboards which teams, in what order, with what kind of hand-holding, and what tells you it's working. That is where I'd like to help.
+    That last step is not another architecture question. It's a services question &mdash; who onboards which teams, in what order, with what kind of hand-holding, and what tells you it's working.
+  </p>
+
+  <h2>An Adoption Fitness Check</h2>
+
+  <p>
+    The shape I'd propose for the first six weeks is a short, structured read of where adoption actually stands. Four dimensions, one page each, one prioritized roadmap out the other side.
+  </p>
+
+  <ol class="dimensions">
+    <li>
+      <strong>Awareness.</strong> Do the named business users on the target teams know the mesh exists, what it can answer, and how to reach it from Teams? Awareness is the cheapest gap to close and often the one that has been assumed away.
+    </li>
+    <li>
+      <strong>Confidence.</strong> When a user gets an answer from the agent, do they trust it enough to act on it &mdash; or do they still re-run the report in the old tool to check? Confidence is earned once, from a specific team, on a specific question. It doesn't generalize by accident.
+    </li>
+    <li>
+      <strong>Fit.</strong> Does the platform answer the questions those specific teams actually ask on a Tuesday, or does it answer a slightly different set of questions the pilot was optimized for? Fit is a listening exercise before it is a build one.
+    </li>
+    <li>
+      <strong>Habit.</strong> Six weeks in, are the same users coming back on their own, without a nudge? Are they bringing colleagues? Habit is the only dimension the platform team cannot cause from the outside. It is what tells you the work has actually landed.
+    </li>
+  </ol>
+
+  <p>
+    The output is a prioritized roadmap &mdash; which team goes first, what hand-holding they need, what tells you six weeks in that it is working. It is not a re-architecture, and it is not a rebrand of the platform. It is the small, disciplined services motion that turns a delivered capability into a used one.
   </p>
 
   <h2>What I'd like to talk about</h2>
 
   <p>
-    Thirty minutes. You tell me who inside your organization would benefit most if they started using the mesh next quarter, and what has kept them from it so far. I tell you honestly what an adoption motion looks like against that specific list — which team goes first, what "in their daily rhythm" actually means, and how we know six weeks in whether it's working.
+    Thirty minutes. You tell me who inside your organization would benefit most if they were using the mesh next quarter, and what has kept them from it so far. I walk that named list through the four dimensions with you &mdash; briefly &mdash; and we agree on whether a fitness check of this shape is the right first step.
   </p>
 
   <p>
