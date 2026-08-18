@@ -1,17 +1,13 @@
-# Enterprise Agent Enablement — The Last Mile
+# Enterprise Agent Enablement
 
-For enterprise teams whose sovereign agent is already deployed and now needs a year of enablement to reach production.
+A one-page landing note from Jeff Eden for enterprise executives whose sovereign agent is already deployed.
 
-**Public surface:** https://eveglyphdesign.github.io/enterprise-agent-enablement/
-**Led by:** Jeff Eden — builder, services executive, and executive counterpart on the client's line. [linkedin.com/in/jeffeden](https://www.linkedin.com/in/jeffeden)
+**Public surface (a short note):** https://eveglyphdesign.github.io/enterprise-agent-enablement/
+**Led by:** Jeff Eden — builder and services executive; previously scaled a ~300-person services organization with a strong reputation across clients, now building his next one. [linkedin.com/in/jeffeden](https://www.linkedin.com/in/jeffeden)
 
 ## What this is
 
-The agent is not the deliverable. The trained team is.
-
-An agent that mirrors the system of record and respects the semantic layer is one step short of production. The step that closes it is enablement — the client's own team learning when to trust the agent, when to override it, and what to keep as evidence when they do.
-
-This surface is written from Jeff's seat as a services executive who has stood at this edge before. It describes a fractional pool of named specialists, priced against a small monthly floor, running inside the client's own tenant — designed so the executive who signs the line item can defend it in twelve months as easily as they signed it today.
+The public surface is deliberately a short note. Its only job is to help Jeff land a first conversation with an executive counterpart — not to describe the offer in full. The full playbook and reference-model registry live in this repository for anyone who wants to read further, but nothing in that material is required for Jeff to open the conversation.
 
 ## Three lanes
 

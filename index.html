@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>The Last Mile — Enterprise Agent Enablement · EVE Glyph Design</title>
-<meta name="description" content="Your agent is deployed. Your team isn't ready yet. Neither was mine. Here's how we close the last mile together — with named specialists, a fair floor, and no one you don't know in the room." />
-<meta property="og:title" content="The Last Mile — Enterprise Agent Enablement" />
-<meta property="og:description" content="Your agent is deployed. Your team isn't ready yet. Here's how we close the last mile — together." />
+<title>The Agent Is Already Yours — a note from Jeff Eden</title>
+<meta name="description" content="A short note from Jeff Eden. Your sovereign agent is already deployed. Dropping it into the middle of your EDP project is a marginal cost, not a new one. Here's how a conversation could go." />
+<meta property="og:title" content="The Agent Is Already Yours — a note from Jeff Eden" />
+<meta property="og:description" content="Your sovereign agent is already deployed. The next step is marginal, not new." />
 <meta property="og:type" content="website" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,168 +19,83 @@
   --line:#e7e1d3;
   --mute:#6b665c;
   --accent:#e87722;
-  --content:1120px;
+  --content:720px;
   --font-display:'Fraunces', Georgia, serif;
   --font-body:'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
 }
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:optimizeLegibility;scroll-behavior:smooth;scroll-padding-top:5rem}
-body{min-height:100dvh;line-height:1.65;font-family:var(--font-body);font-size:17px;color:var(--ink);background:var(--cream)}
+html{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:optimizeLegibility;scroll-behavior:smooth}
+body{min-height:100dvh;line-height:1.7;font-family:var(--font-body);font-size:18px;color:var(--ink);background:var(--cream)}
 a{color:var(--accent);text-decoration:none;border-bottom:1px solid transparent;transition:border-color .2s ease}
 a:hover{border-bottom-color:var(--accent)}
-h1,h2,h3{font-family:var(--font-display);font-weight:600;letter-spacing:-0.02em;line-height:1.15;text-wrap:balance}
-h1{font-size:clamp(2.5rem,5vw,4rem)}
-h2{font-size:clamp(1.75rem,3vw,2.5rem);margin-top:3rem;margin-bottom:1rem}
-h3{font-size:1.25rem;margin-top:1.5rem;margin-bottom:.5rem}
-p{margin-bottom:1rem;max-width:65ch;color:var(--ink)}
-p.lead{font-size:1.25rem;color:var(--mute);max-width:60ch}
-ul{margin-bottom:1rem;padding-left:1.25rem;max-width:65ch}
-li{margin-bottom:.5rem}
-header{border-bottom:1px solid var(--line);background:var(--cream);position:sticky;top:0;z-index:10;backdrop-filter:blur(6px)}
-header .bar{max-width:var(--content);margin:0 auto;padding:1rem 1.5rem;display:flex;justify-content:space-between;align-items:center}
-header .brand{font-family:var(--font-display);font-weight:600;font-size:1.1rem;letter-spacing:-.01em}
-header .brand .dot{color:var(--accent)}
-header nav a{color:var(--mute);font-size:.95rem;margin-left:1.5rem}
-main{max-width:var(--content);margin:0 auto;padding:4rem 1.5rem 6rem}
-section{margin-bottom:4rem}
-section.hero{padding:2rem 0 3rem}
+h1{font-family:var(--font-display);font-weight:600;letter-spacing:-0.02em;line-height:1.15;font-size:clamp(2.25rem,4.5vw,3.5rem);text-wrap:balance}
+h2{font-family:var(--font-display);font-weight:600;letter-spacing:-0.01em;line-height:1.2;font-size:1.5rem;margin-top:2.5rem;margin-bottom:1rem;text-wrap:balance}
+p{margin-bottom:1.25rem;color:var(--ink)}
+p.lead{font-size:1.2rem;color:var(--mute);margin-top:1.5rem}
+main{max-width:var(--content);margin:0 auto;padding:4rem 1.5rem 5rem}
 .eyebrow{color:var(--accent);font-weight:600;font-size:.85rem;text-transform:uppercase;letter-spacing:.08em;margin-bottom:1rem}
 .accent-rule{width:60px;height:3px;background:var(--accent);margin:2rem 0}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem;margin-top:2rem}
-.card{background:var(--cream-2);border:1px solid var(--line);border-radius:8px;padding:1.75rem}
-.card h3{margin-top:0;font-family:var(--font-display);font-weight:600;color:var(--ink)}
-.card .num{font-family:var(--font-display);color:var(--accent);font-size:2rem;font-weight:700;line-height:1;margin-bottom:.5rem;display:block}
-.contact{background:var(--cream-2);border-left:3px solid var(--accent);border-radius:6px;padding:1.75rem;margin-top:3rem}
-.contact h3{margin-top:0}
-.contact .name{font-family:var(--font-display);font-size:1.4rem;font-weight:600;margin-bottom:.25rem}
-.contact .role{color:var(--mute);margin-bottom:.75rem}
-table{width:100%;border-collapse:collapse;margin:1.5rem 0;font-size:.95rem;max-width:none}
-th,td{text-align:left;padding:.75rem 1rem;border-bottom:1px solid var(--line);vertical-align:top}
-th{font-family:var(--font-display);font-weight:600;background:var(--cream-2);color:var(--ink)}
-footer{border-top:1px solid var(--line);margin-top:6rem;padding:3rem 1.5rem;text-align:center;color:var(--mute);font-size:.9rem}
+.signature{margin-top:3rem;padding-top:2rem;border-top:1px solid var(--line)}
+.signature .name{font-family:var(--font-display);font-size:1.35rem;font-weight:600;margin-bottom:.25rem}
+.signature .role{color:var(--mute);font-size:.95rem;margin-bottom:1rem}
+.cta{display:inline-block;margin-top:.5rem;padding:.85rem 1.5rem;background:var(--accent);color:var(--cream);border-radius:6px;font-weight:600;border:none}
+.cta:hover{background:#c85f10;border-bottom-color:transparent}
+footer{max-width:var(--content);margin:0 auto;padding:0 1.5rem 3rem;text-align:center;color:var(--mute);font-size:.85rem}
 footer .close{font-family:var(--font-display);font-style:italic;color:var(--accent);margin-top:.5rem}
-.tag{display:inline-block;padding:.2rem .6rem;background:var(--cream-2);border:1px solid var(--line);border-radius:99px;font-size:.8rem;color:var(--mute);margin-right:.5rem;margin-bottom:.5rem}
 </style>
 </head>
 <body>
 
-<header>
-  <div class="bar">
-    <div class="brand">EVEglyph<span class="dot">·</span>Design</div>
-    <nav>
-      <a href="#lanes">Three lanes</a>
-      <a href="#motion">Motion</a>
-      <a href="#economics">Economics</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </div>
-</header>
-
 <main>
 
-<section class="hero">
-  <div class="eyebrow">The last mile</div>
-  <h1>Your agent is deployed. Your team isn't ready yet. Neither was mine.</h1>
+  <div class="eyebrow">A short note</div>
+  <h1>The agent is already yours. The next step is marginal, not new.</h1>
   <div class="accent-rule"></div>
+
   <p class="lead">
-    That gap — between a capability that works and a team that runs it in production — is the loneliest place on an enterprise roadmap. The budget you have left has to land there. Everything after this page is about how we close it together, with people you'll actually get to know.
+    I'd like thirty minutes. No deck, no pitch — just a conversation between two operators about what the next twelve months could look like.
   </p>
-  <div style="margin-top:1.5rem">
-    <span class="tag">Named people, not resources</span>
-    <span class="tag">A fair floor</span>
-    <span class="tag">Inside your tenant</span>
-    <span class="tag">Portable reference models</span>
-  </div>
-</section>
 
-<section>
-  <h2>What I've seen at this edge</h2>
-  <p>An agent gets stood up. It respects the semantic layer. On a good day it answers correctly against real data. On a hard day it sits idle because the people it was built for aren't yet sure when to trust it, when to override it, and what to keep as evidence when they do.</p>
-  <p>That's not a technology problem. It's a confidence problem, and confidence is built by the same specialists who built the capability — sitting with the team, in their tenant, on their calendar, on their real work — until the team owns it.</p>
-  <p>I've been the executive on the client side of this exact call. I know what it feels like to have a budget line to defend, a boss who backed you when it was still theoretical, and a team that needs the next twelve weeks to feel manageable. That's the ground this offer stands on.</p>
-</section>
+  <h2>Why I'm writing</h2>
 
-<section id="lanes">
-  <h2>Three lanes</h2>
-  <div class="grid">
-    <div class="card">
-      <span class="num">01</span>
-      <h3>Fractional resource pool</h3>
-      <p>Named specialists on a monthly minimum. Between milestones, the same people remain accessible for guided hours — document review, process improvement, template refinement. The knowledge pool stays warm; the marginal cost of continuity is small.</p>
-    </div>
-    <div class="card">
-      <span class="num">02</span>
-      <h3>Enterprise training & enablement</h3>
-      <p>Curriculum for the client's own team on running the deployed agent safely in production. Secure-model workflows for sensitive lanes; open-model workflows for enterprise-standard information that should not be locked behind unnecessary security.</p>
-    </div>
-    <div class="card">
-      <span class="num">03</span>
-      <h3>Reference-model standards</h3>
-      <p>Public, versioned templates and frameworks the client's team forks and follows. Drift is not eliminated by discipline; it is limited by always going back to originals. Shared reference models mean independent users produce outputs that combine cleanly.</p>
-    </div>
-  </div>
-</section>
+  <p>
+    You already have a sovereign agent deployed against your system of record. It respects the semantic layer; it runs against real data. The hard money is already spent, and the capability is real.
+  </p>
 
-<section id="motion">
-  <h2>The motion</h2>
-  <table>
-    <thead>
-      <tr><th style="width:5rem">Stage</th><th>What happens</th></tr>
-    </thead>
-    <tbody>
-      <tr><td><strong>01</strong></td><td><strong>Discovery, at the client's semantic layer.</strong> Walk the deployed agent with the client's team. What already runs? Which lanes are ready for production?</td></tr>
-      <tr><td><strong>02</strong></td><td><strong>Team readiness plan.</strong> Match specialists to lanes. Draft the curriculum, agree the monthly minimum, name the reference models the team will adopt.</td></tr>
-      <tr><td><strong>03</strong></td><td><strong>Enablement in production.</strong> Training and hands-on work happen inside the client's own tenant — client's calendar, client's document space, client's data. Nothing leaks into the delivery firm.</td></tr>
-      <tr><td><strong>04</strong></td><td><strong>Fractional operating rhythm.</strong> Monthly minimum shifts from training to guided operation. Specialists rotate in for specific asks, not blanket coverage.</td></tr>
-      <tr><td><strong>05</strong></td><td><strong>Steady state with surge rights.</strong> Client draws against the minimum for regular work and surges on the same specialists for milestones.</td></tr>
-    </tbody>
-  </table>
-</section>
+  <p>
+    Where it sits today is right beside your EDP project — not in the middle of it. Moving it into the middle, so your team is running against it as part of their daily work rather than as a parallel effort, is a marginal step. Not a new project. Not a new spend of the size that got it built in the first place.
+  </p>
 
-<section id="economics">
-  <h2>Why a small floor works better than a big project</h2>
-  <p>A team of five during deployment doesn't stay a team of five in production, and paying for one that sits waiting is the fastest way to lose the room on next year's budget conversation. What you actually need is fewer people, the same ones, showing up on a rhythm your team can trust.</p>
-  <p>A monthly floor gives our specialists a reason to stay. It gives your team a predictable presence to lean on. And it gives you something clean to defend upstairs: a small, disciplined line that produces artifacts your auditors and your CFO can both read.</p>
-  <h3 style="margin-top:2rem">How the money works</h3>
-  <ul>
-    <li><strong>Monthly floor</strong> — a fair, defensible line item. Named specialists plan against it; your team is expected to use the hours on real work, not filler.</li>
-    <li><strong>Surge when it matters</strong> — same people, more hours, pre-agreed rates. Milestones don't force a new procurement cycle.</li>
-  </ul>
-  <p style="margin-top:1rem;color:var(--mute);font-style:italic">The exact numbers are a conversation between two executives, not a rate card. What I promise is that the specialists are paid well enough to keep showing up, the floor is small enough to be defensible, and nothing about the deal will surprise you six months in.</p>
-</section>
+  <h2>What I do</h2>
 
-<section>
-  <h2>Reference-model discipline</h2>
-  <p>Every artifact points back to an original. Templates are versioned. Forks declare their parent. Drift is limited by the discipline of always returning to the reference, not by policing what people produce.</p>
-  <p>The public reference models are hosted in this repository so the client's team, the specialists, and the commercial network all read from the same origin. This is what keeps outputs combining cleanly across independent users.</p>
-  <p><a href="https://github.com/EVEglyphDesign/enterprise-agent-enablement/blob/main/REFERENCE-MODELS.md">Read the reference-model registry →</a></p>
-</section>
+  <p>
+    I spent most of my career building a services company, scaled to about three hundred people, with a reputation across a lot of very different clients. I sold it. Now I'm building the next one — deliberately, with the specialists who already know your environment, and with a first conversation that isn't a proposal.
+  </p>
 
-<section id="contact">
-  <h2>Who's on the other side of the table</h2>
-  <div class="contact">
+  <p>
+    What I bring to your side of the table is an executive who has sat in your seat before, knows what a defensible line item looks like, and has never mistaken activity for value.
+  </p>
+
+  <h2>What I'd like to talk about</h2>
+
+  <p>
+    Thirty minutes. You describe what a good end-of-year looks like for the EDP project and where the remaining budget has to land. I tell you honestly whether folding the agent into the middle of that work fits the shape you need, and if it doesn't, I tell you what would.
+  </p>
+
+  <p>
+    Nothing to prepare. Nothing to review. Just a call.
+  </p>
+
+  <div class="signature">
     <div class="name">Jeff Eden</div>
     <div class="role">Builder · Services executive · Advisor, Board Member, Investor</div>
-    <p>I've built services businesses from the ground up and taken them to market. I've sat in the seat where the year's budget has to land somewhere that will still be defensible in twelve months. And I've been the executive who backed a team into a hard new capability and needed a partner who wouldn't disappear once the invoice was signed.</p>
-    <p>That's the partner I try to be here. I lead the conversation myself — you get me, not a hand-off. If we work together, you'll know the specialists on the bench by name, you'll see them on your calendar every week, and you'll have my number if any of it starts to feel wrong.</p>
-    <p>The right first step is a conversation — thirty minutes, no deck. You tell me where the budget has to land and what a good next year looks like for your team. I'll tell you honestly whether this offer fits it, and if it doesn't, I'll tell you what would.</p>
-    <p><a href="https://www.linkedin.com/in/jeffeden"><strong>Reach me on LinkedIn — linkedin.com/in/jeffeden →</strong></a></p>
+    <a class="cta" href="https://www.linkedin.com/in/jeffeden">Reach me on LinkedIn →</a>
   </div>
-</section>
-
-<section>
-  <h2>Further reading</h2>
-  <ul>
-    <li><a href="https://github.com/EVEglyphDesign/enterprise-agent-enablement/blob/main/PARTNER-PLAYBOOK.md">Partner playbook — the enablement motion in full</a></li>
-    <li><a href="https://github.com/EVEglyphDesign/enterprise-agent-enablement/blob/main/REFERENCE-MODELS.md">Reference-model registry — fork rules and versioning</a></li>
-    <li><a href="https://github.com/EVEglyphDesign/enterprise-agent-enablement">Repository — enterprise-agent-enablement</a></li>
-  </ul>
-</section>
 
 </main>
 
 <footer>
-  <div>© 2026 EVEglyphDesign · Document ID EgD-EAE-001 · Key EgD-KEY-2026-07</div>
+  <div>© 2026 EVEglyphDesign · EgD-EAE-001 · EgD-KEY-2026-07</div>
   <div class="close">Pour le bien-être du peuple.</div>
 </footer>
 
