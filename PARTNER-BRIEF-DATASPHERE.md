@@ -1,9 +1,9 @@
 # Point Me at Problems — A Presales Motion for SAP Account Executives
 
-**A partner brief.** For SAP account executives whose customers are running out of trial window before the demo lands on real data.
+**A partner brief.** For SAP account executives moving any ECC, BW, BW/4HANA, or AfO customer toward Datasphere and SAP Analytics Cloud.
 
 **From:** Jeff Eden — SCS Decision Intelligence Center of Excellence
-**Focus:** SAP BW / BW/4HANA / AfO customers moving to Datasphere and SAC
+**Focus:** ECC / S/4 / BW / BW/4HANA / AfO customers adopting Datasphere and SAC
 **Public counterpart to a private customer-success story on file.**
 
 ---
@@ -26,9 +26,9 @@ Not a full SI. Not competing with your incumbent partners. Additive — not subs
 
 ## What "you cannot get otherwise" actually means
 
-Three things existing options do not deliver inside a customer's trial window:
+Three things existing options do not deliver in a bounded, fixed-price shape:
 
-1. **A working demo on the customer's own SAP data — not sample data — inside 3–4 weeks**, on the customer's own free Datasphere and SAC trials. SIs cannot spin this up without a full statement of work; the AE's own bench does not have SAP-specific AI tooling; the customer's IT team runs out of trial before their vendor selection.
+1. **A working demo on the customer's own SAP data — not sample data — inside 3–4 weeks**, running against the customer's own Datasphere and SAC tenant (trial, subscribed, or an existing one). SIs cannot spin this up without a full statement of work; the AE's own bench does not have SAP-specific AI tooling; the customer's IT team does not have the room to build a real-data proof between other commitments.
 2. **A governed AI agent over Datasphere delivered inside Microsoft Teams**, on real customer data, with source citations. The [DMZ Open](https://github.com/EVEglyphDesign/dmz-open-ai) surface — LangGraph agent API, Teams bot, LangFuse proxy, Azure Foundry / DeepSeek integration, OData / SAP Datasphere read path — is already running.
 3. **Every artifact in a private repository with cryptographic hashes and clickable canonical links.** Nothing walks out on a consultant's laptop, nothing lives only in a chat window. The customer keeps the repository at exit.
 
@@ -38,12 +38,15 @@ Those three, together, are the differentiation.
 
 ## The customer situation the AE already knows
 
+Applies to any SAP ECC, S/4, BW, BW/4HANA, or AfO customer looking at Datasphere and SAC — whether they are pre-trial, in-trial, post-trial, or already subscribed and stalled.
+
+- **SAP ECC / Business Suite 7** — mainstream maintenance ends **31 December 2027**, optional extended maintenance runs to **31 December 2030** at a two-percentage-point uplift ([SAP · Maintenance Strategy](https://support.sap.com/en/offerings-programs/strategy.html)). Every ECC customer is having the successor conversation right now; the analytics side of that conversation is Datasphere + SAC.
 - **Classic SAP BW 7.5** — mainstream maintenance ends 31 December 2027, extended maintenance ends 31 December 2030 ([SAP · BW/4HANA End of Mainstream Maintenance Key Dates](https://www.sap.com/documents/2019/02/1ca4c940-3a7d-0010-87a3-c30de2ffd8ff.html); [SAP · NetWeaver 7.5 & BW/4HANA Maintenance Strategy](https://pages.community.sap.com/topics/abap/netweaver-maintenance-strategy)).
 - **SAP BW/4HANA** — maintained through at least 2040. Not end-of-life, but innovation gravity has moved to Datasphere and SAP Analytics Cloud.
 - **SAP Analysis for Microsoft Office (AfO)** — the Excel-on-BW front-end most customers actually live inside every day. Successor path: the SAC add-in for Microsoft 365.
-- **Datasphere + SAC** — the sanctioned successor stack. A 30-day Datasphere free trial ([SAP · Experience SAP Datasphere](https://www.sap.com/products/data-cloud/datasphere/trial.html)) and a free SAC trial ([SAP · Analytics Cloud trial](https://www.sap.com/products/technology-platform/cloud-analytics/trial.html)) exist — but a trial on sample data is not the same thing as a working report against the customer's own P&L.
+- **Datasphere + SAC** — the sanctioned successor stack. A [30-day Datasphere free trial](https://www.sap.com/products/data-cloud/datasphere/trial.html) and a [free SAC trial](https://www.sap.com/products/technology-platform/cloud-analytics/trial.html) exist for customers who want to sample first; existing Datasphere or SAC tenants work equally well as the runway.
 
-**The gap is not architecture. It is presales execution capacity in bounded units, fast enough to fit inside the trial window.**
+**The gap is not architecture and it is not licensing. It is presales execution capacity in bounded units, delivered against the customer's own data.**
 
 ---
 
@@ -94,8 +97,8 @@ A bounded proof that Datasphere + SAC can perform the reporting the current BW i
 
 ## The commercial shape
 
-1. **The AE refers.** They send a customer stalling in Datasphere trial, or an AfO base that will not migrate itself, or a CFO who wants proof before authorizing a purchase order.
-2. **SCS executes on the customer's demo license.** The 30-day Datasphere trial and free SAC trial are the runway. The AE does not procure infrastructure; the customer does not sign a large statement of work.
+1. **The AE refers.** They send any ECC / BW / AfO customer where Datasphere + SAC is on the table — pre-purchase, mid-trial, post-trial, or already subscribed and stalled. An AfO base that will not migrate itself, a CFO who wants proof before authorizing a purchase order, an ECC customer whose steering committee will not sign off on the successor stack without a working artifact — all of it qualifies.
+2. **SCS executes on whatever tenant is in play.** A Datasphere trial, a subscribed Datasphere tenant, or a fresh trial spun up for the engagement — SCS uses what the customer already has. The AE does not procure infrastructure; the customer does not sign a large statement of work.
 3. **The setup is packaged, fixed-price, and exit-friendly.** One of the four packages above.
 4. **The AE closes the license.** The customer has seen Datasphere and SAC work on their data. They buy more.
 
@@ -116,6 +119,7 @@ The deal the AE cares about is the SAP license. The Center of Excellence's role 
 
 - [DMZ Open — governed Teams / Datasphere agent surface](https://github.com/EVEglyphDesign/dmz-open-ai)
 - [SAPfans.io — additive public knowledge commons for the SAP ecosystem](https://github.com/EVEglyphDesign/sapfans-io)
+- [SAP · Maintenance Strategy (ECC / Business Suite 7)](https://support.sap.com/en/offerings-programs/strategy.html)
 - [SAP · BW/4HANA End of Mainstream Maintenance Key Dates](https://www.sap.com/documents/2019/02/1ca4c940-3a7d-0010-87a3-c30de2ffd8ff.html)
 - [SAP · NetWeaver 7.5 & BW/4HANA maintenance strategy](https://pages.community.sap.com/topics/abap/netweaver-maintenance-strategy)
 - [SAP Datasphere trial](https://www.sap.com/products/data-cloud/datasphere/trial.html)
