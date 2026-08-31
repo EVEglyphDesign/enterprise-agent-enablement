@@ -4,11 +4,11 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>The mesh is delivered. Let's get it into your people's hands. — a note from Jeff Eden</title>
-<meta name="description" content="A short note from Jeff Eden. The Enterprise Data Mesh proposed in December 2025 is delivered. Two of your teams — Nick Burns's FP&A and Jaci Clark's billing — can put it to work on Tuesday. Here's the six-week shape." />
+<meta name="description" content="A short note from Jeff Eden. The Enterprise Data Mesh proposed in December 2025 is delivered. Nick Burns's FP&A team and Billing operations can put it to work on Tuesday. Here's the six-week shape." />
 <link rel="canonical" href="https://eveglyphdesign.github.io/enterprise-agent-enablement/" />
 <meta name="theme-color" content="#fdfaf4" />
 <meta property="og:title" content="The mesh is delivered. Let's get it into your people's hands. — a note from Jeff Eden" />
-<meta property="og:description" content="Delivered. Portable to AWS. Ready for Nick Burns's FP&A team and Jaci Clark's billing team on Tuesday. The six-week Adoption Fitness Check makes it real." />
+<meta property="og:description" content="Delivered. Portable to AWS. Ready for Nick Burns's FP&A team and Billing operations on Tuesday. The six-week Adoption Fitness Check makes it real." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://eveglyphdesign.github.io/enterprise-agent-enablement/" />
 <meta property="og:image" content="https://eveglyphdesign.github.io/enterprise-agent-enablement/assets/og.png" />
@@ -17,7 +17,7 @@
 <meta property="og:image:alt" content="A short note from Jeff Eden — the mesh is delivered." />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="The mesh is delivered. Let's get it into your people's hands. — a note from Jeff Eden" />
-<meta name="twitter:description" content="Delivered. Portable to AWS. Ready for Nick Burns's FP&A team and Jaci Clark's billing team on Tuesday." />
+<meta name="twitter:description" content="Delivered. Portable to AWS. Ready for Nick Burns's FP&A team and Billing operations on Tuesday." />
 <meta name="twitter:image" content="https://eveglyphdesign.github.io/enterprise-agent-enablement/assets/og.png" />
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%23fdfaf4' stroke='%23e87722' stroke-width='6'/%3E%3Ctext x='50' y='68' text-anchor='middle' font-family='Georgia,serif' font-size='58' font-weight='600' fill='%231a1a1a'%3EE%3C/text%3E%3C/svg%3E" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -70,6 +70,13 @@ ol.dimensions li{counter-increment:dim;position:relative;padding:1.15rem 0 1.15r
 ol.dimensions li:last-child{border-bottom:1px solid var(--line)}
 ol.dimensions li::before{content:counter(dim,decimal-leading-zero);position:absolute;left:0;top:1.2rem;font-family:var(--font-display);font-weight:600;font-size:1.1rem;color:var(--accent);letter-spacing:.02em}
 ol.dimensions li strong{font-family:var(--font-display);font-weight:600;font-size:1.15rem;color:var(--ink);display:block;margin-bottom:.35rem;letter-spacing:-0.005em}
+p.scope-note{background:var(--cream-2);border-left:3px solid var(--accent);padding:1.1rem 1.35rem;margin:1.5rem 0 0;font-size:.98rem;color:var(--ink-2);border-radius:2px}
+p.scope-note strong{color:var(--ink)}
+ol.pattern{list-style:none;counter-reset:pat;margin:1.25rem 0 1.5rem;padding:0}
+ol.pattern li{counter-increment:pat;position:relative;padding:1rem 0 1rem 3.25rem;border-top:1px solid var(--line);color:var(--ink-2)}
+ol.pattern li:last-child{border-bottom:1px solid var(--line)}
+ol.pattern li::before{content:counter(pat,decimal-leading-zero);position:absolute;left:0;top:1rem;font-family:var(--font-display);font-weight:600;font-size:1.05rem;color:var(--accent);letter-spacing:.02em}
+ol.pattern li strong{color:var(--ink)}
 
 /* Numbers block */
 .numbers{display:grid;grid-template-columns:1fr;gap:1rem;margin:1.5rem 0 1rem}
@@ -172,20 +179,24 @@ footer .canonical .url{font-family:'SFMono-Regular',Consolas,'Liberation Mono',M
     </div>
 
     <div class="team">
-      <div class="who">Jaci Clark's billing team</div>
-      <div class="role">Quarterback of financial operations · services revenue flows through her team</div>
+      <div class="who">Billing operations</div>
+      <div class="role">The team that carries services-revenue integrity end to end</div>
       <ul>
-        <li>Every edit to a draft sales order is tracked. Recurring edits are ranked by monetary weight and turned into master-data fixes at the source — contracts, Bullhorn profiles, rates, roles.</li>
-        <li>One source-fix removes the same edit from every future month for every operator. Time comes back to the team.</li>
-        <li>Statistical outliers surface as prioritized cases — thousands of dollars for minutes of work, the shape a human recognizes on sight once they have the consolidated view.</li>
-        <li>Missing-line-item risk is detected, not only present-line-item risk. Forward-looking risk surfaces months ahead, not only in the current billing period.</li>
+        <li><strong>Auto-billing is damage control.</strong> By the time a bill is being corrected, or a prior period is being adjusted, revenue has already leaked. The goal is to catch the error before it happens and fix the behavior upstream, so the team stops chasing people at period close.</li>
+        <li><strong>Identify where the team's hours actually go</strong> — which categories consume the most Billing-ops time month over month — and take those categories to a DMZ-bound model that reads data already in Epiq's sovereign repository. Root cause, not symptoms.</li>
+        <li><strong>The deliverable in the analysis phase is a prioritized list.</strong> Ranked by monetary weight, root cause named, upstream fix identified. Not a new tool. Not a platform to learn. A list Billing ops can act on the day they receive it.</li>
+        <li><strong>Anything worth operationalizing lands in the surface people already use</strong> — Teams, Power BI, email — whichever Billing ops prefers. The platform adapts to the team's tools, not the other way around.</li>
       </ul>
     </div>
 
   </div>
 
   <p>
-    The point is not that the platform automates their work. The point is that <strong>the platform gives Nick's team modeling they've never had</strong> and <strong>gives Jaci's team the hours to push billing into the field</strong> the way any good services or law-firm operation does. That is where back-office margin actually lives.
+    The point is not that the platform automates the work. The point is that <strong>Nick's team gets modeling they've never had</strong> and <strong>Billing operations gets to stop chasing people</strong> — because the errors are caught upstream, in data Epiq already owns, on surfaces people already open. That is where back-office margin actually lives.
+  </p>
+
+  <p class="scope-note">
+    <strong>Honest scope note on the data side.</strong> The sales-order and change tables that feed the Billing-ops analysis were pulled manually into the Azure tenant when the Datasphere wiring for that specific slice was paused; a walkable demo runs off that extract. Production wiring is a small, bounded piece of work when Epiq is ready. Bullhorn is architecturally a different question — it belongs on the AWS side, and Epiq's own team has already assembled the Bullhorn dataset there. The delivered access layer plugs straight into it. The moment it does, the pattern-analysis layer has a much bigger dataset to work with, and the first honest high-value pattern is time-recording behaviour: last-minute submissions systematically undercount hours, and a broad-dataset view catches that before the invoice runs, not after.
   </p>
 
   <div class="section-rule"></div>
@@ -194,6 +205,25 @@ footer .canonical .url{font-family:'SFMono-Regular',Consolas,'Liberation Mono',M
 
   <p>
     The delivered access layer — Postgres, LangGraph, LangChain, delivered through Teams — is not tied to SAP or to Azure. <strong>It ports to AWS as-is.</strong> Anything you decide to build in AWS becomes immediately usable against governed enterprise data through the same Teams delivery layer your users are already in. This is portfolio reuse of an asset you already own. Not a new spend. Not a rebuild.
+  </p>
+
+  <div class="section-rule"></div>
+
+  <h2>Why the same story travels</h2>
+
+  <p>
+    Epiq is the first client this story lands on, but it is not the only place it fits. Behind the specifics of BW, Datasphere, Bullhorn, Nick's team and Billing operations, the pattern the delivered platform makes possible is <strong>a single, repeatable shape</strong>:
+  </p>
+
+  <ol class="pattern">
+    <li><strong>Catch errors upstream, not at close.</strong> Downstream automation is damage control; upstream enforcement is where the revenue actually lives.</li>
+    <li><strong>Use a DMZ-bound model against data the customer already holds in their sovereign repository.</strong> Nothing new is created; nothing leaves the customer's control.</li>
+    <li><strong>Deliver the analysis as a prioritized list first</strong> — ranked by monetary weight, root cause named, upstream fix identified. Operationalize only what earns operationalization.</li>
+    <li><strong>Land the operationalized pieces in surfaces the customer's people already use</strong> — Teams, Power BI, email. Not a new tool. Not new training. Not another login.</li>
+  </ol>
+
+  <p>
+    That same four-step shape is what a customer-platforms conversation at SAP would recognize — the same argument the SAP field would make itself, delivered against the customer's own tenant rather than a hosted product. The Epiq work is where the pattern gets its first defensible reference. Every subsequent client makes the reference cheaper to sell, and the delivered platform ports without a rewrite.
   </p>
 
   <div class="section-rule"></div>
@@ -235,7 +265,7 @@ footer .canonical .url{font-family:'SFMono-Regular',Consolas,'Liberation Mono',M
     <div class="number">
       <div class="n">~$80K</div>
       <div class="l">Remaining under the current PO</div>
-      <div class="d">Enough to fund the adoption motion — production rollout and training on the delivered platform, and a concrete billing workflow for Jaci Clark's team — inside room that is already there.</div>
+      <div class="d">Enough to fund the adoption motion — production rollout and training on the delivered platform, and a concrete workflow for Billing operations — inside room that is already there.</div>
     </div>
     <div class="number">
       <div class="n">0</div>
