@@ -123,6 +123,11 @@ footer .canonical .url{font-family:'SFMono-Regular',Consolas,'Liberation Mono',M
 /* Reusable-offer numbers row (reuse .numbers/.number tokens) */
 .reuse-row{display:grid;grid-template-columns:1fr;gap:1rem;margin:1.5rem 0 .5rem}
 @media (min-width:640px){.reuse-row{grid-template-columns:1fr 1fr 1fr;gap:1rem}}
+
+/* Diagrams */
+figure.diagram{margin:2rem 0 2.25rem;padding:0}
+figure.diagram img{width:100%;height:auto;display:block;border:1px solid var(--line);border-radius:6px;background:var(--cream)}
+figure.diagram figcaption{margin-top:.6rem;font-size:.85rem;color:var(--mute);font-style:italic;text-align:center}
 .reuse-item{padding:1.25rem 1.25rem 1.1rem;border:1px solid var(--line);border-radius:6px;background:var(--cream)}
 .reuse-item .rlabel{font-family:var(--font-body);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:600;margin-bottom:.4rem}
 .reuse-item .rtitle{font-family:var(--font-display);font-weight:600;color:var(--ink);font-size:1.05rem;margin-bottom:.35rem;line-height:1.25}
@@ -160,6 +165,11 @@ footer .canonical .url{font-family:'SFMono-Regular',Consolas,'Liberation Mono',M
     Two things are already built and paid for. The three-layer Enterprise Data Mesh proposed in December 2025. And the $500K ERP charter that reached production this year — IC, JV Compliance and UJ blueprints, executed at contract price, with a component-level audit trail your teams can reuse. What we haven't finished yet is the part only a services motion can finish — getting it in front of the humans it was built for.
   </p>
 
+  <figure class="diagram" id="fig-mesh">
+    <img src="./assets/diagram_mesh.png" alt="Three-layer delivered mesh: source systems, governed data fabric, semantic and governance hub, AI access layer.">
+    <figcaption>Figure 1 &middot; The three-layer delivered mesh &mdash; source to Sera&#39;s people, in Epiq&#39;s tenant.</figcaption>
+  </figure>
+
   <div class="section-rule"></div>
 
   <h2>What was actually delivered under the $500K charter</h2>
@@ -191,11 +201,21 @@ footer .canonical .url{font-family:'SFMono-Regular',Consolas,'Liberation Mono',M
     </div>
   </div>
 
+  <figure class="diagram" id="fig-delivery">
+    <img src="./assets/diagram_delivery.png" alt="Charter delivery timeline: scope with GitHub Cloud in early 2025, execution handoff to Steel Cloud at Christmas 2025, build and QAS through 2026, delivered at contract price.">
+    <figcaption>Figure 2 &middot; The delivery timeline &mdash; scoped by GitHub Cloud, executed by Steel Cloud, landed at contract price.</figcaption>
+  </figure>
+
   <h3>Traceable from blueprint to transport, one row at a time</h3>
 
   <p>
-    Every technical object built under the charter carries a numbered identity from the blueprint section it implements through DEV unit testing, QAS testing, the transport number that moved it and the cutover evidence that proves it landed. This is what "component-level documentation" means in practice — not a description of the build, but a lookup for every piece of it.
+    Every technical object built under the charter carries a numbered identity from the blueprint section it implements through DEV unit testing, QAS testing, the transport number that moved it and the cutover evidence that proves it landed. This is what "component-level documentation" means in practice &mdash; not a description of the build, but a lookup for every piece of it.
   </p>
+
+  <figure class="diagram" id="fig-trace">
+    <img src="./assets/diagram_trace.png" alt="Component-level audit trail: IC, JV Compliance, and Universal Journal blueprints tracked across five stations — blueprint, technical design, DEV unit test, QAS test, transport and cutover.">
+    <figcaption>Figure 3 &middot; The component-level trace &mdash; three blueprints, five stations, every artifact numbered end to end.</figcaption>
+  </figure>
 
   <div class="trace">
     <div class="trace-node"><span class="n">1 · Blueprint</span><span class="v">Tech-spec 3.3.7</span></div>
@@ -324,11 +344,16 @@ footer .canonical .url{font-family:'SFMono-Regular',Consolas,'Liberation Mono',M
 
   <div class="section-rule"></div>
 
-  <h2>The delivery pattern is portable — to your other programs, and to any LLM</h2>
+  <h2>The delivery pattern is portable &mdash; to your other programs, and to any LLM</h2>
 
   <p>
-    The specific tool we used to deliver the Vortex build was Perplexity, because Steel Cloud had the project-tier tooling and it worked. But the tool is not the point. <strong>The pattern is: a governed project repository sitting behind an LLM surface, structured so a business user asks in plain English and the answer is routed to the exact artifact.</strong> That pattern is portable to Copilot if Epiq standardizes there, or to Claude if any team wants to — the repository behind it does not care.
+    The specific tool we used to deliver the Vortex build was Perplexity, because Steel Cloud had the project-tier tooling and it worked. But the tool is not the point. <strong>The pattern is: a governed project repository sitting behind an LLM surface, structured so a business user asks in plain English and the answer is routed to the exact artifact.</strong> That pattern is portable to Copilot if Epiq standardizes there, or to Claude if any team wants to &mdash; the repository behind it does not care.
   </p>
+
+  <figure class="diagram" id="fig-pattern">
+    <img src="./assets/diagram_pattern.png" alt="LLM-agnostic pattern: three assistant tiers — Perplexity, Copilot, Claude — all reading from the same GitHub project repository through a shared adapter contract.">
+    <figcaption>Figure 4 &middot; The LLM-agnostic pattern &mdash; the repository is the record, the assistant is interchangeable.</figcaption>
+  </figure>
 
   <div class="reuse-row">
     <div class="reuse-item">
