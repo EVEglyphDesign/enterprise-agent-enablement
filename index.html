@@ -3,12 +3,12 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>The mesh is delivered. Let's get it into your people's hands. — a note from Jeff Eden</title>
-<meta name="description" content="A short note from Jeff Eden. The Enterprise Data Mesh proposed in December 2025 is delivered. Nick Burns's FP&A team and Billing operations can put it to work on Tuesday. Here's the six-week shape." />
+<title>The mesh is delivered — including the Vortex ERP build. Let's get it into your people's hands. — a note from Jeff Eden</title>
+<meta name="description" content="A short note from Jeff Eden. The Enterprise Data Mesh proposed in December 2025 is delivered, and the $500K ERP charter (IC, JV Compliance, UJ blueprints) was executed at contract price with a component-level audit trail. Nick Burns's FP&A team and Billing operations can put it to work Tuesday." />
 <link rel="canonical" href="https://eveglyphdesign.github.io/enterprise-agent-enablement/" />
 <meta name="theme-color" content="#fdfaf4" />
-<meta property="og:title" content="The mesh is delivered. Let's get it into your people's hands. — a note from Jeff Eden" />
-<meta property="og:description" content="Delivered. Portable to AWS. Ready for Nick Burns's FP&A team and Billing operations on Tuesday. The six-week Adoption Fitness Check makes it real." />
+<meta property="og:title" content="The mesh is delivered — including the Vortex ERP build. A note from Jeff Eden." />
+<meta property="og:description" content="$500K charter delivered at contract price. IC, JV Compliance and UJ blueprints executed with full traceability. Ready for Nick Burns's FP&A team and Billing operations on Tuesday." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://eveglyphdesign.github.io/enterprise-agent-enablement/" />
 <meta property="og:image" content="https://eveglyphdesign.github.io/enterprise-agent-enablement/assets/og.png" />
@@ -16,8 +16,8 @@
 <meta property="og:image:height" content="630" />
 <meta property="og:image:alt" content="A short note from Jeff Eden — the mesh is delivered." />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="The mesh is delivered. Let's get it into your people's hands. — a note from Jeff Eden" />
-<meta name="twitter:description" content="Delivered. Portable to AWS. Ready for Nick Burns's FP&A team and Billing operations on Tuesday." />
+<meta name="twitter:title" content="The mesh is delivered — including the Vortex ERP build. A note from Jeff Eden." />
+<meta name="twitter:description" content="$500K charter delivered at contract price. IC, JV Compliance and UJ blueprints, component-level audit trail. Ready Tuesday." />
 <meta name="twitter:image" content="https://eveglyphdesign.github.io/enterprise-agent-enablement/assets/og.png" />
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%23fdfaf4' stroke='%23e87722' stroke-width='6'/%3E%3Ctext x='50' y='68' text-anchor='middle' font-family='Georgia,serif' font-size='58' font-weight='600' fill='%231a1a1a'%3EE%3C/text%3E%3C/svg%3E" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -98,6 +98,35 @@ footer{max-width:var(--content);margin:0 auto;padding:0 1.5rem 3rem;text-align:c
 footer .close{font-family:var(--font-display);font-style:italic;color:var(--accent);margin-top:.5rem}
 footer .canonical{margin-top:1.25rem;padding-top:1.25rem;border-top:1px solid var(--line);font-size:.78rem}
 footer .canonical .url{font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;color:var(--ink);word-break:break-all}
+
+/* Delivered blueprints — three pills */
+.blueprints{display:grid;grid-template-columns:1fr;gap:1rem;margin:1.5rem 0 1.75rem}
+@media (min-width:640px){.blueprints{grid-template-columns:1fr 1fr 1fr;gap:1rem}}
+.blueprint{background:var(--cream-2);border:1px solid var(--line);border-top:3px solid var(--accent);border-radius:6px;padding:1.1rem 1.1rem 1rem}
+.blueprint .tag{font-family:var(--font-body);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:600;margin-bottom:.3rem}
+.blueprint .name{font-family:var(--font-display);font-weight:600;font-size:1.1rem;color:var(--ink);line-height:1.25;margin-bottom:.4rem;letter-spacing:-0.005em}
+.blueprint .versions{font-family:'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace;font-size:.78rem;color:var(--mute);margin-bottom:.5rem}
+.blueprint .what{font-size:.9rem;color:var(--ink-2);line-height:1.5}
+
+/* Trace flow — five stages */
+.trace{display:flex;flex-wrap:wrap;gap:.55rem;align-items:center;margin:1.25rem 0 1.5rem;padding:1.1rem 1.15rem;background:var(--cream-2);border:1px solid var(--line);border-radius:6px}
+.trace-node{background:var(--cream);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:4px;padding:.55rem .75rem;flex:1 1 auto;min-width:0}
+.trace-node .n{font-family:var(--font-body);font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:600;display:block;margin-bottom:.2rem}
+.trace-node .v{font-family:var(--font-display);font-weight:600;color:var(--ink);font-size:.95rem;line-height:1.15;letter-spacing:-0.005em}
+.trace-arrow{color:var(--accent);font-weight:700;flex:0 0 auto}
+
+/* Sample link block */
+.sample-link{margin:1rem 0 1.5rem;padding:1rem 1.15rem;background:var(--cream);border:1px dashed var(--accent);border-radius:6px;font-size:.95rem;color:var(--ink-2);display:flex;flex-wrap:wrap;gap:.5rem;align-items:baseline}
+.sample-link strong{color:var(--ink)}
+.sample-link a{font-weight:600;border-bottom:1px solid var(--accent)}
+
+/* Reusable-offer numbers row (reuse .numbers/.number tokens) */
+.reuse-row{display:grid;grid-template-columns:1fr;gap:1rem;margin:1.5rem 0 .5rem}
+@media (min-width:640px){.reuse-row{grid-template-columns:1fr 1fr 1fr;gap:1rem}}
+.reuse-item{padding:1.25rem 1.25rem 1.1rem;border:1px solid var(--line);border-radius:6px;background:var(--cream)}
+.reuse-item .rlabel{font-family:var(--font-body);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:600;margin-bottom:.4rem}
+.reuse-item .rtitle{font-family:var(--font-display);font-weight:600;color:var(--ink);font-size:1.05rem;margin-bottom:.35rem;line-height:1.25}
+.reuse-item .rbody{font-size:.9rem;color:var(--ink-2);line-height:1.55}
 </style>
 </head>
 <body>
@@ -124,12 +153,79 @@ footer .canonical .url{font-family:'SFMono-Regular',Consolas,'Liberation Mono',M
 <main>
 
   <div class="eyebrow">A short note · for Sera Gray</div>
-  <h1>The mesh is delivered. Let's get it into your people's hands.</h1>
+  <h1>The mesh is delivered, the Vortex ERP charter is delivered. Let's get them into your people's hands.</h1>
   <div class="accent-rule"></div>
 
   <p class="lead">
-    The three-layer Enterprise Data Mesh we proposed in December 2025 is built. Historical reporting works. The AI agent answers cross-system questions safely through Teams. What we haven't finished yet is the part only a services motion can finish — getting it in front of the humans it was built for.
+    Two things are already built and paid for. The three-layer Enterprise Data Mesh proposed in December 2025. And the $500K ERP charter that reached production this year — IC, JV Compliance and UJ blueprints, executed at contract price, with a component-level audit trail your teams can reuse. What we haven't finished yet is the part only a services motion can finish — getting it in front of the humans it was built for.
   </p>
+
+  <div class="section-rule"></div>
+
+  <h2>What was actually delivered under the $500K charter</h2>
+
+  <p>
+    The original charter was scoped and blueprinted with Cloud DEG in early 2025. From Christmas onward, execution and delivery were carried by <strong>Steel Cloud Solutions</strong>, using EVE — our project-repository-plus-LLM delivery surface — as the working layer. The GitHub Cloud blueprints were taken through DEV build, unit test, QAS validation, transport and cutover, and the charter landed <strong>at its original commercial envelope</strong> despite non-standard processes that were not declared in the blueprint phase and upgrade-schedule amends that had to be absorbed mid-flight.
+  </p>
+
+  <h3>Three delivered blueprints — the artifacts</h3>
+
+  <div class="blueprints">
+    <div class="blueprint">
+      <div class="tag">IC</div>
+      <div class="name">Intercompany Blueprint</div>
+      <div class="versions">Phase 1 v1.2 &rarr; Phase 2 v1.4</div>
+      <div class="what">Clearing, matching and reconciliation (ICCLEAR01–08, ICMR01–04). Auto-clearing plus the intercompany EDI automation (ICAUTO01–19) that carries the cross-border tax scenarios — including the China / USA / HK exceptions that surfaced late and were closed inside the same envelope.</div>
+    </div>
+    <div class="blueprint">
+      <div class="tag">JV</div>
+      <div class="name">JV Compliance Blueprint</div>
+      <div class="versions">Phase 1 v1.6 &rarr; Phase 2 v1.8</div>
+      <div class="what">Joint-venture workflow, GL upload trigger and 4EYES validation (JVWF01–07). Fiori-app-delivered, workflow-enhanced, tied back to the JV-partner change control the finance team needed for its own compliance reporting.</div>
+    </div>
+    <div class="blueprint">
+      <div class="tag">UJ</div>
+      <div class="name">UJ (Universal Journal) Blueprint</div>
+      <div class="versions">Phase 1 v1.2 &rarr; Phase 2 v1.4</div>
+      <div class="what">Document splitting (DOCSPLIT01–38) and profitability analysis (COPA01–08). Segment, profit-center and account classification, item-category rules, ledger activation — the S/4 foundation that the analytical shape upstairs depends on.</div>
+    </div>
+  </div>
+
+  <h3>Traceable from blueprint to transport, one row at a time</h3>
+
+  <p>
+    Every technical object built under the charter carries a numbered identity from the blueprint section it implements through DEV unit testing, QAS testing, the transport number that moved it and the cutover evidence that proves it landed. This is what "component-level documentation" means in practice — not a description of the build, but a lookup for every piece of it.
+  </p>
+
+  <div class="trace">
+    <div class="trace-node"><span class="n">1 · Blueprint</span><span class="v">Tech-spec 3.3.7</span></div>
+    <span class="trace-arrow">&rarr;</span>
+    <div class="trace-node"><span class="n">2 · Technical design</span><span class="v">IC / JV / UJ Tech Design 1.2</span></div>
+    <span class="trace-arrow">&rarr;</span>
+    <div class="trace-node"><span class="n">3 · DEV unit test</span><span class="v">DOCSPLIT01–38</span></div>
+    <span class="trace-arrow">&rarr;</span>
+    <div class="trace-node"><span class="n">4 · QAS test</span><span class="v">ICAUTO01–19</span></div>
+    <span class="trace-arrow">&rarr;</span>
+    <div class="trace-node"><span class="n">5 · Transport &amp; cutover</span><span class="v">DEVK937xxx</span></div>
+  </div>
+
+  <p class="sample-link">
+    <strong>Sample:</strong> ten rows drawn straight from the Vortex Build Run Book, phase 2 — <a href="./internal/EVEglyphDesign_Vortex_Trace_Sample.pdf">read the one-page trace sample &rarr;</a>. The full workbook has 94 rows for phase 2 alone and continues into the transport and cutover evidence tabs.
+  </p>
+
+  <p>
+    The artifacts themselves stay where Epiq already keeps its ERP delivery record — in your SharePoint. What we added is a <strong>reusable additive layer</strong>: the project repository that sits behind the LLM surface, structured so a business user can ask a plain-English question and be routed to the exact blueprint section, technical object, test evidence and transport that answers it. When a change hits any one of those, the trace still holds.
+  </p>
+
+  <p>
+    Two things were made materially cheaper because EVE was in the loop from the start. First, <strong>pattern-based exception assessment was front-loaded</strong> — the working data was walked before build began, so the question load on John Mullen's team was a fraction of what an unassisted delivery would have carried. Second, <strong>unit-test execution and result-gathering were automated</strong> across the numbered test cases above, which is how the amends and non-standard processes were absorbed without a change-order conversation.
+  </p>
+
+  <p class="scope-note">
+    <strong>The honest failure mode.</strong> Not every exception was caught upstream. The cross-border tax exceptions in ICAUTO18/19 (China, USA, HK) surfaced late in QAS and had to be closed under time pressure. That is the story worth telling: the front-loading substantially reduced the exception queue, and the exceptions that did land late were handled inside the original envelope. The next engagement gets to start with those patterns already known.
+  </p>
+
+  <div class="section-rule"></div>
 
   <h2>What we set out to do — and what happened</h2>
 
@@ -228,6 +324,36 @@ footer .canonical .url{font-family:'SFMono-Regular',Consolas,'Liberation Mono',M
 
   <div class="section-rule"></div>
 
+  <h2>The delivery pattern is portable — to your other programs, and to any LLM</h2>
+
+  <p>
+    The specific tool we used to deliver the Vortex build was Perplexity, because Steel Cloud had the project-tier tooling and it worked. But the tool is not the point. <strong>The pattern is: a governed project repository sitting behind an LLM surface, structured so a business user asks in plain English and the answer is routed to the exact artifact.</strong> That pattern is portable to Copilot if Epiq standardizes there, or to Claude if any team wants to — the repository behind it does not care.
+  </p>
+
+  <div class="reuse-row">
+    <div class="reuse-item">
+      <div class="rlabel">The mechanism</div>
+      <div class="rtitle">GitHub repository behind the LLM</div>
+      <div class="rbody">Blueprints, technical designs, test evidence, transport logs and cutover proofs live in a versioned, provenance-preserving repo. The LLM is the surface; the repo is the record.</div>
+    </div>
+    <div class="reuse-item">
+      <div class="rlabel">The consequence</div>
+      <div class="rtitle">Any tier, any assistant, still answers</div>
+      <div class="rbody">A user on a free or standard-tier assistant gets the same complete project context, because the context is in the repository — not on the individual seat. Sera's teams don't need top-tier licenses per person.</div>
+    </div>
+    <div class="reuse-item">
+      <div class="rlabel">The extension</div>
+      <div class="rtitle">Portable to Sera's other programs</div>
+      <div class="rbody">The same LLM-plus-repo pattern lifts onto any program with a durable artifact backbone — platform migrations, back-office standardization, compliance evidence, M&amp;A integration. The Vortex work is the reference; the pattern is what travels.</div>
+    </div>
+  </div>
+
+  <p>
+    The offer is not "license our tool." The offer is: <strong>we can stand this pattern up on whichever LLM Epiq has already chosen</strong>, using artifacts your teams are already producing, without adding a per-user cost or a new tool to learn. That is what makes it defensible on a corporate-platforms scorecard — it reuses what you already have and it doesn't lock you into what we already have.
+  </p>
+
+  <div class="section-rule"></div>
+
   <h2>An Adoption Fitness Check</h2>
 
   <p>
@@ -306,7 +432,7 @@ footer .canonical .url{font-family:'SFMono-Regular',Consolas,'Liberation Mono',M
 </main>
 
 <footer>
-  <div>© 2026 EVEglyphDesign · EgD-EAE-002 · EgD-KEY-2026-07</div>
+  <div>© 2026 EVEglyphDesign · EgD-EAE-003 · EgD-KEY-2026-07</div>
   <div class="close">Pour le bien-être du peuple.</div>
   <div class="canonical">
     Canonical URL for this note: <span class="url">https://eveglyphdesign.github.io/enterprise-agent-enablement/</span>
